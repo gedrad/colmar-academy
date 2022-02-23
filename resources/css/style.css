@@ -1,19 +1,10 @@
 html {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Nunito Sans', sans-serif;
 }
 
-body {
-border-style: solid;   
-border-left: 1px;
-border-right: 5px;
-border-bottom: 1px;
-border-color: rgb(185, 41, 41);
-box-sizing: border-box;
-}
-
 header {
-height: 64px;
+height: 4rem;
 width: 100%;
 background-color: white;
 }
@@ -22,28 +13,26 @@ background-color: white;
 
 .logo {
     position: relative;
-    height: 32px;
-    padding-left: 24px;
-    padding-top: 15px;
-    display: inline-block;
-    
-
+    height: 2rem;
+    padding-left: 1.5rem;
+    padding-top: 0.9375rem;
+    display: inline-block;   
 }
 
 .logo-background {
-    width: 51px;
-    height: 36px;
+    width: 3.1875rem;
+    height: 2.25rem;
     float: left;
 }
 
 .colmaracademy {
     display: inline-block;
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 
 .colmar {
     font-weight: 700;
-    padding-top: 50px;
+    padding-top: 3.125rem;
 }
 
 .academy {
@@ -53,37 +42,50 @@ background-color: white;
 
 /*nav right side*/
 
-nav {
-    float: right;
-    text-align: center;
+.navbaras {
+    width: 100%;
+    height: 4rem;
+    display: flex;
 }
 
-nav ul li {
-    display: inline-block;
-    padding-top: 20px;
+.navbaro-konteineris {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1.5rem;
 }
 
-nav ul li:not(:last-child):after {
-    content:'';
-  border-right: 16px solid;
-  color:aqua;
+.link {
+    font-family: 'Nunito-Sans-semi-bold-600', sans-serif;
+    font-size: 0.9rem;
 }
 
-nav ul li a {
-    font-size: 16px;
+.link a {
     text-decoration: none;
+    color: rgb(56, 63, 65);
 }
 
-li:last-child {
-    margin-right: 24px;
-    border-right: none;
+a {
+    text-decoration: none; 
+    color: rgb(56, 63, 65);
 }
 
-li:last-child .li-block {
-    height: 64px;
-    width: 16px;
-    position: absolute;
+.form {
+    height: 100%;
+    width: 1rem;
+    background-color: rgb(113, 212, 212);
 }
+
+/*borders*/
+
+.border-container {
+    border-right: 0.0625rem solid rgb(141, 142, 143);
+    border-bottom: 0.0625rem solid rgb(141, 142, 143);
+    border-left: 0.0625rem solid rgb(141, 142, 143);
+    padding-right: 0.125rem;
+}   
 
 /*learn something*/
 
@@ -98,7 +100,7 @@ li:last-child .li-block {
 .featured-image {
     width: 60%;
     height: 100%;
-    margin: 32px 24px;
+    margin: 2rem 1.5rem;
 }
 
 .featured-image img {
@@ -129,7 +131,7 @@ li:last-child .li-block {
 button {
     text-align: center;
     height: 2.5rem;
-    width: 290px;
+    width: 18.125rem;
     margin-top: 1.9rem;
     background-color: rgb(56, 63, 65);
 }
@@ -137,8 +139,8 @@ button {
 .featured-text h4 {
     font-size: 1rem; 
     color: rgb(255, 255, 255); 
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 
@@ -155,9 +157,9 @@ button {
 .camp .practicing {
     width: 60%;
     height: auto; 
-    padding: 32px 24px;
+    padding: 2rem 1.5rem;
     border-style: solid;
-    border-right-width: 1px;
+    border-right-width: 0.0625rem;
     border-color: rgb(212, 214, 216);
 }  
 
@@ -168,8 +170,8 @@ button {
 }
 
 .text-under {
-    margin-top: 32px;
-    margin-left: 24px;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
     text-align: left;
     color: rgb(56, 63, 65);
 }
@@ -178,27 +180,27 @@ button {
     font-family: 'Nunito-Sans-semi-bold-600', sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
-    padding-bottom: 24px;
+    padding-bottom: 1.5rem;
 }
 
 .text-under h5 {
     font-size: 1rem;
-    padding-bottom: 32px;
+    padding-bottom: 2rem;
     line-height: 1.4rem;
 }
 
 .text-under h6 {
     font-size: 0.9rem;
-    padding-bottom: 8px;
+    padding-bottom: 0.5rem;
 }
 
 /*campus rigt side container*/
 
 .campus-activity {
     width: 100%;
-    padding: 32px 16px 16px;
+    padding: 2rem 1rem 1rem;
     border-style: solid;
-    border-bottom-width: 1px;
+    border-bottom-width: 0.0625rem;
     border-color: rgb(212, 214, 216);
     display: flex;
     justify-content: stretch;
@@ -219,7 +221,7 @@ button {
 
 .text-right {
     float: right; 
-    padding-left: 24px;
+    padding-left: 1.5rem;
     color: rgb(56, 63, 65);
 }
 
@@ -234,21 +236,21 @@ button {
     font-family: 'Nunito-Sans-semi-bold-600', sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    padding-top: 12px;
+    padding-top: 0.75rem;
 }
 
 .read-more {
     color: cornflowerblue;
-    line-height: 45px;
+    line-height: 2.8125rem;
 }
 /*our campus*/
 
 .our-campus {
     width: 100%;
-    padding: 16px 16px;
+    padding: 1rem 1rem;
     border-style: solid;
-    border-top-width: 1px;
-    margin: 1px;
+    border-top-width: 0.0625rem;
+    margin: 0.0625rem;
     border-color: rgb(212, 214, 216);
     display: flex;
     justify-content: stretch;
@@ -281,20 +283,20 @@ button {
     font-family: 'Nunito-Sans-semi-bold-600', sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    padding-top: 12px;
+    padding-top: 0.75rem;
 }
 
 .read-more {
     color: cornflowerblue;
-    line-height: 45px;
+    line-height: 2.8125rem;
 }
 
 /*our guest*/
 
 .our-guest {
     width: 100%;
-    padding: 16px 16px;
-    margin-bottom: 32px;
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: stretch;
     align-items: center;
@@ -327,12 +329,12 @@ button {
     font-family: 'Nunito-Sans-semi-bold-600', sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    padding-top: 12px;
+    padding-top: 0.75rem;
 }
 
 .read-more {
     color: cornflowerblue;
-    line-height: 45px;
+    line-height: 2.8125rem;
 }
 
 /* start learning chapter*/
@@ -340,15 +342,15 @@ button {
 .start-learning {
     width: 100%;
     background-color: rgb(232, 237, 240);
-    padding-left: 72px;
-    padding-right: 72px;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
     box-sizing: border-box;
 }
 
 .start-learning h2 {
     text-align: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     font-family: 'Nunito-Sans-semi-bold-600', sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
@@ -366,8 +368,8 @@ button {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 2rem;
+    padding-bottom:2rem;
 }
 
 .container {
@@ -383,13 +385,13 @@ button {
 }
 
 .text-under-container {
-    padding: 16px 0 24px 16px;
+    padding: 1rem 0 1.5rem 1rem;
     background-color: white;
     color: rgb(56, 63, 65);
 }
 
 .courses {
-    padding-bottom: 8px;
+    padding-bottom: 0.5rem;
     font-family: 'Nunito-Sans-semi-bold-600', sans-serif;
     font-size: 1rem;
     font-weight: 500; 
@@ -399,7 +401,7 @@ button {
     font-family: 'Nunito-Sans-semi-bold-600', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    padding-bottom: 8px;
+    padding-bottom: 0.5rem;
 }
 
 .text-under-container h4 {
@@ -421,8 +423,8 @@ button {
 
 .thesis h2 {
     text-align: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     font-family: 'Nunito-Sans-semi-bold-600', sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
@@ -433,21 +435,24 @@ button {
 .video {
     width: 60%;
     height: auto;
-    padding: 0 24px 32px 24px ; 
+    margin: 0 1.5rem 2rem 1.5rem;
     box-sizing: border-box;
 }
 
 video {
     width: 100%;
     height: auto;
+    border-width: 0.125rem 0.125rem;
+    border-style: solid;
+    border-color: rgb(141, 142, 143);
 }
 
 .video-thesis h3 {
     font-family: 'Nunito-Sans-semi-bold-600', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    padding-top: 24px;
-    padding-bottom: 8px;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
     color: rgb(56, 63, 65);
 }
 
@@ -470,7 +475,7 @@ video {
 .image-right {
     width: 35%;
     height: auto;
-    padding: 16px 16px;
+    padding: 1rem 1rem;
     box-sizing: border-box;
 }
 
@@ -493,11 +498,11 @@ video {
     font-family: 'Nunito-Sans-semi-bold-600', sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    padding-top: 12px;
+    padding-top: 0.75rem;
 }
 
 .now-then {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: stretch;
     align-items: center;
@@ -507,7 +512,7 @@ video {
 .image-right {
     width: 35%;
     height: auto;
-    padding: 16px 16px;
+    padding: 1rem 1rem;
     box-sizing: border-box;
 }
 
@@ -530,14 +535,15 @@ video {
     font-family: 'Nunito-Sans-semi-bold-600', sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    padding-top: 12px;
+    padding-top: 0.75rem;
 }
 
 footer {
     width: 100%;
     height: 100px;
-    border-top: 1px;
+    border-top: 0.0625rem;
     border-style: solid;
+    border-color: rgb(141, 142, 143);
 }
 
 .copyright {
@@ -548,18 +554,20 @@ footer {
 .copyright h6 {
     font-family: 'Nunito-Sans-semi-bold-600', sans-serif;
     font-size: 0.9rem;
-    padding-left: 24px;
-    padding-top: 16px;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    color: rgb(56, 63, 65);
 }
 
 .terms {
     float: right;
+    padding-right: 1.5rem;
 }
 
 .terms ul li {
     display: inline-block;
-    padding-top: 16px;
-    padding-left: 8px;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
 }
     
 
@@ -567,4 +575,5 @@ footer {
     font-family: 'Nunito-Sans-semi-bold-600', sans-serif;
     font-size: 0.9rem;
     text-decoration: none;
+    color: rgb(56, 63, 65);
 }
