@@ -78,6 +78,10 @@ a {
     background-color: rgb(113, 212, 212);
 }
 
+header .mobile {
+    display: none;
+  }
+
 /*borders*/
 
 .border-container {
@@ -134,6 +138,7 @@ button {
     width: 18.125rem;
     margin-top: 1.9rem;
     background-color: rgb(56, 63, 65);
+    border: none;
 }
 
 .featured-text h4 {
@@ -205,7 +210,6 @@ button {
     display: flex;
     justify-content: stretch;
     align-items: center;
-    height: fit-content;
     box-sizing: border-box;
 }  
 
@@ -214,7 +218,11 @@ button {
     height: auto;
 }
 
-.campus-activity img {
+.image-mobile {
+    display: none;
+} 
+
+.campus-image img {
     width: 100%;
     height: auto;
 }
@@ -243,6 +251,7 @@ button {
     color: cornflowerblue;
     line-height: 2.8125rem;
 }
+
 /*our campus*/
 
 .our-campus {
@@ -411,6 +420,10 @@ button {
     line-height: 1.5rem; 
 }
 
+.mobile-container {
+    display: none;
+}
+
 /*video thesis*/
 
 .video-thesis {
@@ -433,7 +446,7 @@ button {
 }
 
 .video {
-    width: 60%;
+    width: 100%;
     height: auto;
     margin: 0 1.5rem 2rem 1.5rem;
     box-sizing: border-box;
@@ -550,7 +563,6 @@ footer {
     display: inline-block;
 }
 
-
 .copyright h6 {
     font-family: 'Nunito-Sans-semi-bold-600', sans-serif;
     font-size: 0.9rem;
@@ -569,11 +581,196 @@ footer {
     padding-top: 1rem;
     padding-left: 0.5rem;
 }
-    
 
 .terms ul li a {
     font-family: 'Nunito-Sans-semi-bold-600', sans-serif;
     font-size: 0.9rem;
     text-decoration: none;
     color: rgb(56, 63, 65);
+}
+
+@media only screen and (max-width: 760px) {
+    .navbaro-konteineris {
+        display: none;
+    } 
+
+    .colmaracademy {
+        display: none;
+    }
+
+    /*header mobile*/
+    
+    .navbaras .mobile {
+        display: block;
+        width: 100%;
+    }
+    
+    header .mobile ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding-left: 35px;
+      }
+
+      header .mobile li {
+        padding-top: 18px;
+      }
+
+      /*learn something*/
+
+    .learn {
+       display: block;
+        padding-bottom: 32px;
+      }
+
+    .featured-image {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 32px;
+        margin: 0 0;
+    }
+
+    .featured-text {
+        padding-left: 16px;
+    }
+
+    button {
+        background-color:rgb(141, 142, 143)
+    }
+
+    /*campus*/
+
+    .campus-image {
+        display: none;
+    }
+
+    .practicing {
+        display: none;
+    }
+
+    .campus-right {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .campus-activity {
+        display: block;
+        padding-top: 16px; 
+        border: none;
+    }
+
+    .image-mobile {
+        width: 100%;
+        height: auto;
+        display: block; 
+        padding-bottom: 32px; 
+    }
+
+    .image-mobile img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-right {
+        float: none;
+    }
+
+    /*our campus*/
+
+    .our-campus {
+        display: block;
+        border: none;
+    }
+
+    .our-campus .text-right {
+        float: none;
+    }
+
+    .our-guest {
+        display: block;
+        background-color: white;
+        margin-bottom: 0;
+        border-style: solid;
+        border-bottom-width: 0.0625rem;
+        border-color: rgb(212, 214, 216);
+    }
+
+    .our-guest .text-right {
+        float: none;
+    }
+
+    /*start learning*/
+
+    .six-containers {
+        display: none;
+    }
+
+    .six-containers-second {
+        display: none;
+    }
+
+    .start-learning {
+        background-color: white;
+        padding-right: none;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 24px;
+        border-style: solid;
+        border-bottom-width: 0.0625rem;
+        border-color: rgb(212, 214, 216);
+        box-sizing: border-box;
+    }
+
+    .mobile-container {
+        width: 94%;
+        height: auto;
+        padding: 16px 24px 24px 16px;
+        margin: 8px 16px;
+        background-color: rgb(223, 226, 231);
+        display: block;
+        box-sizing: border-box;
+    }
+    .mobile-container h3 {
+        font-family: 'Nunito-Sans-semi-bold-600', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    .start-learning h2 {
+        padding-bottom: 16px;
+    }
+
+    /*video thesis*/
+
+    .video-text-under {
+        display: none;
+    }
+
+    .right-container {
+        display: none;
+    }
+
+    .video {
+        margin: 0 0 0 0;
+    }
+
+    .thesis h2 {
+        padding-bottom: 16px;
+        background-color: white;
+    }
+
+    .copyright {
+        padding-top: 24px;
+    }
+
+    .terms {
+        padding-top: 24px;
+    }
+
+    footer {
+        height: 100%; 
+        padding-bottom: 16px;
+    }
 }
